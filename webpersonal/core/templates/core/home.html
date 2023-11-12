@@ -1,6 +1,15 @@
 {% extends 'core/base.html' %}
 
-{% block 'title' %}Home{% endblock 'title' %}
+{% block 'title' %}
+    Home
+{% endblock 'title' %}
+
+{% block background %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock background %}
+
+{% block headers %}
+    <h1>Adams Hernandez</h1>
+    <span class"subheading"> Ingeniero Informático
+{% endblock headers %}
 
 {% block content %}
     <h2>Portada</h2>

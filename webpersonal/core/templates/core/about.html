@@ -2,6 +2,13 @@
 
 {% block 'title' %}About{% endblock 'title' %}
 
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock background %}
+
+{% block headers %}
+    <h1>Adams Hernandez</h1>
+    <span class"subheading"> Ingeniero Informático
+{% endblock headers %}
+
 {% block content %}
     <h2>Acerca de</h2>
     <p>Me llamo Adams y soy programador</p>
