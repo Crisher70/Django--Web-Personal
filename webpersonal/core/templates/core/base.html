@@ -17,16 +17,16 @@
         <h1>Mi web personal</h1>
             <ul>
                 <li>
-                    <a href="/">Portada</a>
+                    <a href="{% url 'home' %}">Portada</a>
                 </li>
                 <li>
-                    <a href="/about">Acerca de</a>
+                    <a href="{% url 'about' %}">Acerca de</a>
                 </li>
                 <li>
-                    <a href="/portfolio">POrtafolio</a>
+                    <a href="{% url 'portafolio' %}">POrtafolio</a>
                 </li>
                 <li>
-                    <a href="/contact">Contacto</a>
+                    <a href="{% url 'contact' %}t">Contacto</a>
                 </li>
             </ul>
 
