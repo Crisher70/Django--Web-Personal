@@ -5,8 +5,10 @@ class Project(models.Model):
     title = models.CharField(max_length=200, verbose_name="Titulo")
     descripcion = models.TextField(verbose_name="Descripcion")
     image = models.ImageField(verbose_name="Imagen", upload_to="projects")
+    link = models.URLField(verbose_name="Direccion web", null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add = True, verbose_name="Creado en")
     updated_at = models.DateTimeField(auto_now_add = True, verbose_name="Actualizado en")
+    
 
     class Meta:
         verbose_name = "Proyecto" # nombre de la clase

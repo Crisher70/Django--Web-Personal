@@ -3,6 +3,6 @@ from .models import Project
 
 # Register your models here.
 class ProjectAdmin(admin.ModelAdmin):
-    readonly_fields = ('created', 'updated')
+    readonly_fields = ('created_at', 'updated_at')
 
-admin.site.register(Project)
+admin.site.register(Project, ProjectAdmin)
