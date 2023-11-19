@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Proyect
+from .models import Project
 
 # Register your models here.
-class ProyectAdmin(admin.ModelAdmin):
+class ProjectAdmin(admin.ModelAdmin):
     readonly_fields = ('created', 'updated')
 
-admin.site.register(Proyect)
+admin.site.register(Project)

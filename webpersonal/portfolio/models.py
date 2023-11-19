@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Proyect(models.Model):
+class Project(models.Model):
     title = models.CharField(max_length=200, verbose_name="Titulo")
     descripcion = models.TextField(verbose_name="Descripcion")
     image = models.ImageField(verbose_name="Imagen", upload_to="projects")
